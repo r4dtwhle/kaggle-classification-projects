@@ -1,0 +1,24 @@
+# Data kompetisi Kaggle (tidak didistribusikan ulang, lihat data/README.md di tiap proyek)
+*/data/*.csv
+*/data/*.zip
+# File Excel berisi data train + prediksi (berukuran besar & memuat data kompetisi)
+*/outputs/*.xlsx
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

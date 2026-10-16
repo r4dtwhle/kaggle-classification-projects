@@ -1,0 +1,42 @@
+Loading data...
+Train: (22916, 22), Test: (5729, 21)
+Target dist:
+berlangganan_deposito
+0    20302
+1     2614
+Name: count, dtype: int64
+
+Feature Engineering...
+Features: 31 columns
+
+Training SVC with calibrated probabilities...
+(This may take a few minutes...)
+Training done in 106.6s
+
+Evaluating with OOF predictions...
+  Fold 1: AUC = 0.76672
+  Fold 2: AUC = 0.78294
+  Fold 3: AUC = 0.77807
+  Fold 4: AUC = 0.77545
+  Fold 5: AUC = 0.76461
+
+Overall OOF AUC: 0.77325
+
+Generating test predictions...
+Prediction stats: min=0.0126, max=0.6500, mean=0.1116
+
+Submission saved to: outputs/submission_svc.csv
+   customer_number  berlangganan_deposito
+0           445420               0.051464
+1           585604               0.044621
+2           888824               0.050597
+3           816820               0.049243
+4           542716               0.043141
+5           937852               0.048726
+6           434084               0.047093
+7           230861               0.035593
+8           159684               0.418883
+9           274159               0.044360
+
+Total time: 311.9s
+DONE!
