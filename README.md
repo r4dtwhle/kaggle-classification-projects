@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏆 Kaggle Classification Projects
+#  Kaggle Classification Projects
 
 **Dua proyek klasifikasi biner dari kompetisi Kaggle mata kuliah Data Mining: prediksi pembelian pengunjung e-commerce dan prediksi nasabah yang berlangganan deposito.**
 
@@ -15,7 +15,7 @@
 
 ---
 
-## 📋 Ringkasan
+##  Ringkasan
 
 | # | Proyek | Masalah | Pendekatan | Hasil Terbaik |
 |:---:|---|---|---|:---:|
@@ -26,9 +26,9 @@ Kedua proyek memakai **ROC-AUC** sebagai metrik utama, sesuai format kompetisi y
 
 ---
 
-## 1. 🛒 Online Shoppers Revenue Prediction
+## 1. Online Shoppers Revenue Prediction
 
-📁 Folder: [`01-online-shoppers-revenue/`](01-online-shoppers-revenue/) · 📓 Notebook: [`revenue_prediction.ipynb`](01-online-shoppers-revenue/revenue_prediction.ipynb)
+ Folder: [`01-online-shoppers-revenue/`](01-online-shoppers-revenue/) · 📓 Notebook: [`revenue_prediction.ipynb`](01-online-shoppers-revenue/revenue_prediction.ipynb)
 
 ### Masalah
 Memprediksi apakah sebuah sesi kunjungan website e-commerce akan menghasilkan pembelian (`Revenue = 1`), berdasarkan perilaku browsing seperti jumlah dan durasi halaman yang dikunjungi, *bounce rate*, *exit rate*, *page value*, bulan, dan tipe pengunjung.
@@ -55,7 +55,7 @@ Memprediksi apakah sebuah sesi kunjungan website e-commerce akan menghasilkan pe
 
 | Model | Val AUC | CV AUC | Precision | Recall | F1 |
 |---|:---:|:---:|:---:|:---:|:---:|
-| **Gradient Boosting** 🏆 | **0,925** | **0,929** | **0,714** | 0,599 | 0,652 |
+| **Gradient Boosting**  | **0,925** | **0,929** | **0,714** | 0,599 | 0,652 |
 | Random Forest | 0,923 | 0,928 | 0,588 | 0,779 | 0,670 |
 | LightGBM | 0,921 | 0,925 | 0,603 | 0,734 | 0,662 |
 | XGBoost | 0,919 | 0,925 | 0,630 | 0,727 | 0,675 |
@@ -84,9 +84,9 @@ Memprediksi apakah sebuah sesi kunjungan website e-commerce akan menghasilkan pe
 
 ---
 
-## 2. 🏦 Bank Marketing Term Deposit Prediction
+## 2.  Bank Marketing Term Deposit Prediction
 
-📁 Folder: [`02-bank-marketing-svc/`](02-bank-marketing-svc/) · 🐍 Script: [`svc_model.py`](02-bank-marketing-svc/svc_model.py)
+Folder: [`02-bank-marketing-svc/`](02-bank-marketing-svc/) · 🐍 Script: [`svc_model.py`](02-bank-marketing-svc/svc_model.py)
 
 ### Masalah
 Memprediksi apakah nasabah akan **berlangganan deposito berjangka** setelah dihubungi kampanye telemarketing bank, berdasarkan data demografis, riwayat kontak kampanye, dan indikator ekonomi makro.
@@ -122,7 +122,7 @@ AUC antar *fold* stabil (0,765–0,783), jadi model tidak *overfit* pada satu ba
 
 ---
 
-## 📁 Struktur Folder
+## Struktur Folder
 
 ```
 kaggle-classification-projects/
@@ -144,7 +144,7 @@ kaggle-classification-projects/
 
 ---
 
-## 🚀 Cara Menjalankan
+## Cara Menjalankan
 
 ```bash
 # 1. Clone repository
@@ -167,11 +167,11 @@ jupyter notebook revenue_prediction.ipynb
 python 02-bank-marketing-svc/svc_model.py
 ```
 
-> 📌 **Data tidak disertakan** karena berasal dari kompetisi Kaggle. Seluruh output (grafik, metrik, dan prediksi) sudah tersimpan di notebook dan folder `outputs/`, jadi hasilnya tetap bisa dilihat tanpa menjalankan ulang.
+> *Data tidak disertakan** karena berasal dari kompetisi Kaggle. Seluruh output (grafik, metrik, dan prediksi) sudah tersimpan di notebook dan folder `outputs/`, jadi hasilnya tetap bisa dilihat tanpa menjalankan ulang.
 
 ---
 
-## 🔭 Pengembangan Selanjutnya
+##  Pengembangan Selanjutnya
 
 - ***Hyperparameter tuning*** (Optuna atau `RandomizedSearchCV`) untuk Gradient Boosting dan SVC.
 - ***Threshold tuning*** berdasarkan kebutuhan bisnis, misalnya memaksimalkan *recall* agar lebih banyak calon pembeli/nasabah yang tertangkap.
